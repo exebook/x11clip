@@ -12,7 +12,8 @@ exports.mainLoop = function() {
 		timer = undefined
 	}
 	function go() {
-		if (glxwin.x11quit()) return
+		// для интеграции с основным приложением
+		if (typeof glxwin != 'undefined' && glxwin.x11quit()) return
 		var event = x11clip.step()
 		if (event) {
 			speed = 1
