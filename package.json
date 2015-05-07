@@ -1,1 +1,5 @@
-{ "main" : "./x11clip.js" }
+{
+  "name": "x11clip",
+  "version": "0.0.1",
+  "main" : "./x11clip.js"
+}
